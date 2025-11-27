@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "cowdao-cowpy"
-version = "1.0.1"
+version = "1.0.2"
 description = ""
 authors = [
 	"José Ribeiro <jose@bleu.studio>",
