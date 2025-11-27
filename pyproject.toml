@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "cowdao-cowpy"
-version = "1.0.0"
+version = "1.0.1"
 description = ""
 authors = [
 	"José Ribeiro <jose@bleu.studio>",
@@ -50,6 +50,7 @@ mkdocs-mermaid2-plugin = "^1.2.1"
 mkdocs-material-extensions = "^1.3.1"
 twine = "^6.1.0"
 mkdocs-autorefs = "^1.4.2"
+codespell = "^2.4.1"
 
 
 [tool.poetry.scripts]

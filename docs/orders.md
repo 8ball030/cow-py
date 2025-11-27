@@ -16,6 +16,10 @@ Swapping tokens using market orders is straightforward. You can specify the amou
 
 ```python
 import os
+<<<<<<< HEAD
+=======
+import datetime
+>>>>>>> cowdao-grants-main
 import asyncio
 from dotenv import load_dotenv
 from web3 import Account, Web3
@@ -93,7 +97,16 @@ By default orders are created as FOK orders.
 Partial fill orders allow you to execute a portion of your order immediately while leaving the rest open for execution later. This is useful when you want to take advantage of current market conditions but are willing to wait for a better price on the remaining portion of your order.
 
 ```python
-# TODO: Implement partial fill order creation example
+asyncio.run(
+    swap_tokens(
+        amount=SELL_AMOUNT_BEFORE_FEE,
+        account=ACCOUNT,
+        chain=CHAIN,
+        sell_token=SELL_TOKEN,
+        buy_token=BUY_TOKEN,
+        partially_fillable=True,  # Allow partial fills
+    )
+)
 ```
 
 ## Fetching Order Details
@@ -107,7 +120,7 @@ from cowdao_cowpy.order_book.api import OrderBookApi, UID
 order_book_api = OrderBookApi()
 
 # Fetch and display individual order details
-order = order_book.get_order_by_uid(UID("0x..."))
+order = order_book_api.get_order_by_uid(UID("0x..."))
 print(order)
 
 # Fetch all orders for a specific user
