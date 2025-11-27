@@ -16,7 +16,10 @@ Swapping tokens using market orders is straightforward. You can specify the amou
 
 ```python
 import os
+<<<<<<< HEAD
+=======
 import datetime
+>>>>>>> cowdao-grants-main
 import asyncio
 from dotenv import load_dotenv
 from web3 import Account, Web3
@@ -133,6 +136,12 @@ asyncio.run(main())
 There are several different order options available when creating orders on the CoW Protocol.
 
 This allows you to customize how your orders are executed and managed.
+
+### Fill or Kill (FOK) Orders
+
+Fill or Kill (FOK) orders are a type of order that must be executed immediately in full or not at all. If the order cannot be filled completely, it is canceled at the expiration time.
+
+By default orders are created as FOK orders.
 
 ### Partial Fill Orders
 Partial fill orders allow you to execute a portion of your order immediately while leaving the rest open for execution later. This is useful when you want to take advantage of current market conditions but are willing to wait for a better price on the remaining portion of your order.
