@@ -1463,15 +1463,15 @@ test = ["pytest"]
 
 [[package]]
 name = "datamodel-code-generator"
-version = "0.31.2"
+version = "0.35.0"
 description = "Datamodel Code Generator"
 optional = false
 python-versions = ">=3.9"
 groups = ["dev"]
 markers = "implementation_name == \"cpython\" or implementation_name == \"pypy\""
 files = [
-    {file = "datamodel_code_generator-0.31.2-py3-none-any.whl", hash = "sha256:78f200a9e673ee4d041e96e82a835273baf4ce15e446d46501c0433d82af3ef5"},
-    {file = "datamodel_code_generator-0.31.2.tar.gz", hash = "sha256:47887b8aa6fd69865e07e2893c1e76e34dae753b9a97f1020357af8337bc4cdb"},
+    {file = "datamodel_code_generator-0.35.0-py3-none-any.whl", hash = "sha256:c356d1e4a555f86667a4262db03d4598a30caeda8f51786555fd269c8abb806b"},
+    {file = "datamodel_code_generator-0.35.0.tar.gz", hash = "sha256:46805fa2515d3871f6bfafce9aa63128e735a7a6a4cfcbf9c27b3794ee4ea846"},
 ]
 
 [package.dependencies]
@@ -4294,6 +4294,23 @@ pytest = ">=6.2.5"
 dev = ["pre-commit", "pytest-asyncio", "tox"]
 
 [[package]]
+name = "pytest-rerunfailures"
+version = "16.1"
+description = "pytest plugin to re-run tests to eliminate flaky failures"
+optional = false
+python-versions = ">=3.10"
+groups = ["dev"]
+markers = "implementation_name == \"cpython\" or implementation_name == \"pypy\""
+files = [
+    {file = "pytest_rerunfailures-16.1-py3-none-any.whl", hash = "sha256:5d11b12c0ca9a1665b5054052fcc1084f8deadd9328962745ef6b04e26382e86"},
+    {file = "pytest_rerunfailures-16.1.tar.gz", hash = "sha256:c38b266db8a808953ebd71ac25c381cb1981a78ff9340a14bcb9f1b9bff1899e"},
+]
+
+[package.dependencies]
+packaging = ">=17.1"
+pytest = ">=7.4,<8.2.2 || >8.2.2"
+
+[[package]]
 name = "python-dateutil"
 version = "2.9.0.post0"
 description = "Extensions to the standard Python datetime module"
@@ -5685,4 +5702,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<4.0"
-content-hash = "31ad12de8f74442b0ab38c548a28a28ecbc47af89452188f20d6f79106210a72"
+content-hash = "01b26562caf33d351111f77322cd67ffe6b23f356bad4cb0c867c82b34fbc4b7"
