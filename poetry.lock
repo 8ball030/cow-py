@@ -4152,15 +4152,15 @@ files = [
 
 [[package]]
 name = "pymultihash"
-version = "0.8.1"
+version = "0.8.2"
 description = "Python implementation of the multihash specification"
 optional = false
 python-versions = "*"
 groups = ["main"]
 markers = "implementation_name == \"cpython\" or implementation_name == \"pypy\""
 files = [
-    {file = "pymultihash-0.8.1-py3-none-any.whl", hash = "sha256:ebfd5ceb89807df32b53ad83f2585d5c72bc5322096f5ca224fd81164b0811a1"},
-    {file = "pymultihash-0.8.1.tar.gz", hash = "sha256:4868a871937be1fc98452d01cbf9baf226ceb8fd11c3ec2558f9aceae3a56f2c"},
+    {file = "pymultihash-0.8.2-py3-none-any.whl", hash = "sha256:f7fa840b24bd6acbd6b073fcd330f10e15619387297babf1dd13ca4dae6e8209"},
+    {file = "pymultihash-0.8.2.tar.gz", hash = "sha256:49c75a1ae9ecc6d22d259064d4597b3685da3f0258f4ded632e03a3a79af215b"},
 ]
 
 [package.extras]
@@ -5702,4 +5702,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<4.0"
-content-hash = "70dd7b1e43f0d87839ef065bdc7d701b78fadde54607a565b27bc7328952dbe0"
+content-hash = "57e07f512348521ff42a7dac3ac4dd2bc4e3584076b7ebd939887a30904c2e95"
